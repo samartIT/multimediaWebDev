@@ -1,2 +1,2 @@
-# multimediaWeb
-website development for multimedia track
+# multimediaWebDev
+website development for multimedia track at IT@KMITL

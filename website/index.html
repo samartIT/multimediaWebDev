@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia and Game Development</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher|Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <style type="text/css">
+
+        * {
+            letter-spacing: 0.05em;
+            line-height: 1.5em;
+            font-family: 'Philosopher', sans-serif;
+        }
+
+        hr.clear {
+        clear: both;
+        border: 1px solid transparent;
+        height: 0px;
+        }
+
+        /* GLOBAL STYLES */
+        .runningtxt {
+        padding-top: 5em;
+        display: flex;
+        justify-content: center;
+        }
+
+        /* DEMO-SPECIFIC STYLES */
+        .typewriter h1 {
+        color: #fff;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+            typing 4s steps(30, end),
+            blink-caret .5s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+        }
+
+        #CoopPro {
+        padding: center;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #CoopPro th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #96989e;
+        width: 50%;
+        }
+
+        #CoopPro tr:hover { 
+        background-color: #E0FFFF; 
+        color: black;
+        }
+
+        /*future jobs*/
+
+        .futurejob {
+        overflow: hidden;
+        }
+        .futurejob .ch-grid {
+        margin: 20px 0 0 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        }
+
+        .futurejob .ch-grid:after,
+        .futurejob .ch-item:before {
+        content: '';
+        display: table;
+        }
+
+    .futurejob .ch-grid:after {
+        clear: both;
+    }
+
+    .futurejob .ch-grid li {
+        width: 220px;
+        height: 220px;
+        display: inline-block;
+        margin: 20px;
+    }
+    .futurejob .ch-item {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        cursor: default;
+        box-shadow: 
+            inset 0 0 0 0 rgba(17, 52, 75, 0.4),
+            inset 0 0 0 16px rgba(255,255,255,0.6),
+            0 1px 2px rgba(0,0,0,0.1);
+        transition: all 0.4s ease-in-out;
+    }
+    .futurejob .ch-img-1 { 
+        background: url(img/graphdes.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .futurejob .ch-img-2 { 
+        background-image: url(img/unitygame.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .futurejob .ch-img-3 { 
+        background-image: url(img/technicalart.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .futurejob .ch-img-4 { 
+        background-image: url(img/fullstackweb.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .futurejob .ch-img-5 { 
+        background-image: url(img/itsupport.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    .people {
+        overflow: hidden;
+    }
+    .people .ch-grid {
+        margin: 20px 0 0 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .people .ch-grid:after,
+    .people .ch-item:before {
+        content: '';
+        display: table;
+    }
+
+    .people .ch-grid:after {
+        clear: both;
+    }
+
+    .people .ch-grid li {
+        width: 220px;
+        height: 220px;
+        display: inline-block;
+        margin: 20px;
+    }
+    .people .ch-item {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        cursor: default;
+        box-shadow: 
+            inset 0 0 0 0 rgba(17, 52, 75, 0.4),
+            inset 0 0 0 16px rgba(255,255,255,0.6),
+            0 1px 2px rgba(0,0,0,0.1);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .people .ch-img-1 { 
+        background-image: url(img/mathurin.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .people .ch-img-2 { 
+        background-image: url(img/panuwat.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .people .ch-img-3 { 
+        background-image: url(img/rangsimun.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .people .ch-img-4 { 
+        background-image: url(img/Nattawut.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .people .ch-img-5 { 
+        background-image: url(img/teerawat.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .ch-info {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        transform: scale(0);
+        backface-visibility: hidden;
+    }
+    .ch-info h4 {
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 0 2px 2px 2px;
+        padding: 5px;
+        padding-top: 20%;
+        height: 45px;
+        
+        text-shadow: 
+            0 0 1px #fff, 
+            0 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .ch-info p {
+        color: #fff;
+        padding: 5px;
+        font-style: italic;
+        margin-top: 0px;
+        font-size: 16px;
+        border-top: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .ch-info p a {
+        display: block;
+        color: rgba(255,255,255,0.7);
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding-top: 4px;
+        
+    }
+
+    .ch-info p a:hover {
+        color: rgba(248, 233, 21, 0.87);
+    }
+    .ch-item:hover {
+        box-shadow: 
+            inset 0 0 0 110px rgba(17, 52, 75, 0.4),
+            inset 0 0 0 16px rgba(255,255,255,0.8),
+            0 1px 2px rgba(0,0,0,0.1);
+    }
+    .ch-item:hover .ch-info {
+        opacity: 1;
+        transform: scale(1);    
+    }
+
+
+    /*end of future jobs*/
+
+            /*About Us*/
+
+    .aboutus_body {
+        background-color: black;
+        color: white;
+    }
+    .aboutus {
+      height: 100%;
+      font-weight: 800;
+    }
+
+    .aboutusbody{
+      background: black;
+    }
+
+    .aboutus svg {
+        display: block;
+        font: 15em 'Ubuntu';
+        width: 100vw;
+        height: 14vw;
+        margin: 0 auto;
+    }
+
+    .text-copy {
+        fill: none;
+        stroke: #0000ff;
+        stroke-dasharray: 6% 29%;
+        stroke-width: 5px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 5.5s infinite linear;
+    }
+
+    .text-copy:nth-child(1){
+        stroke: #ffff00;
+        animation-delay: -1;
+    }
+
+    .text-copy:nth-child(2){
+        stroke: #ff4500;
+        animation-delay: -2s;
+    }
+
+    .text-copy:nth-child(3){
+        stroke: #ff1493;
+        animation-delay: -3s;
+    }
+
+    .text-copy:nth-child(4){
+        stroke: #a020f0;
+        animation-delay: -4s;
+    }
+
+    .text-copy:nth-child(5){
+        stroke: #FDB731;
+        animation-delay: -5s;
+    }
+
+    @keyframes stroke-offset{
+        100% {stroke-dashoffset: -35%;}
+    }
+
+
+    /*meen and bam picture*/
+    .webmaker {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+    }
+
+    .row {
+        padding-top: 20px;
+
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    /*end of meen and bam picture*/
+
+    /*end of About Us*/
+
+        </style>
+    </head>
+    <body>
+
+        <section>
+            <!--nav bar-->
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" style="background: black;">
+    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; width: 100%; background-color: black !important;">
+        <div class="uk-container" style="font-family: 'Ubuntu', sans-serif; width: 100%;">
+        <div>
+
+            <ul style="background-color: black; color: white;" class="uk-navbar-nav">
+                <a href="http://www.it.kmitl.ac.th/" class="uk-navbar-item uk-logo"><img style="width: 60px; height: 60px;" src="logo.png"></a>
+                <li class="uk-navbar-left">
+                    <a href="#">Faculty of Information Technology
+                    <br/> King's Mongkut Institute of Technology Lardkrabang</a></li>
+                <li class="uk-navbar-right">
+                    <a href="#">Menu</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#studypath">Study Path</a></li>
+                            <li><a href="#stuinter">Student Interview</a></li>
+                            <li><a href="#cooperaandproj">Cooperative work and Project</a></li>
+                            <li><a href="#futurejobs">Future Job</a></li>
+                            <li><a href="#faques">FAQ:Is Multimedia about creating games?</a></li>
+                            <li><a href="#abtus">About Us</a></li>
+                        </ul>
+                    </div>
+                </li class="uk-navbar-right">
+                
+            </ul>
+
+        </div>
+        </div>
+    </nav>
+</div>
+</section>
+
+    <!-- Hero -->
+    <section class="uk-container">
+        <div>
+            <!--
+            <video playsinline autoplay muted>
+                <source src="main3.mp4" type="video/mp4">
+            </video>
+        -->
+            <div class="parent">
+                <div class="child"></div>
+            </div>
+
+            <img id="mainpic" style="background-size: cover; width: 100%"  src="main8bit.jpg">
+        
+            <!--running text-->
+            <div class="runningtxt uk-overlay uk-position-center">
+                <div style="padding-bottom: 120px; text-shadow: 1px 1px black;" class="typewriter">
+                    <h1>Multimedia and Game Development</h1>
+            <!--enter to website-->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section>
+
+<div class="uk-section uk-section-muted">
+    <div class="uk-container">
+
+        <h3 style="font-family: 'Ubuntu', sans-serif;">Multimedia and Game Development</h3>
+
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div>
+                <p>Learn about media, websites, game coding and creating infographics.</p>
+            </div>
+            <div>
+                <p>Writing codes using the media sources; HTML, JavaScript, CSS, etc.</p>
+            </div>
+            <div>
+                <p>Multimedia is media that is used together with all devices.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    </section>
+
+    <hr class="clear">
+    <section id="studypath">
+        <h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px; font-family: 'Ubuntu', sans-serif;"> Study Path</h1>
+
+    <div style="padding-left: 40px; padding-right: 40px;">
+        <ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: .switcher-container">
+            <li><a href="#">Year 2 Semester 2</a></li>
+            <li><a href="#">Year 3 Semester 1</a></li>
+            <li><a href="#">Year 3 Semester 2</a></li>
+            <li><a href="#">Year 4 Semester 1</a></li>
+            <li><a href="#">Year 4 Semester 2</a></li>
+        </ul>
+
+        <h4 style="font-family: 'Philosopher', sans-serif; color: #338B22;">General Class</h4>
+
+        <ul class="uk-switcher switcher-container uk-margin">
+            <li>
+                <ul>
+                <li style="padding-top: 10px;">
+                    PROBABILITY AND STATISTICS
+                </li>
+                <li style="padding-top: 10px;">
+                    INFORMATION SYSTEMS ANALYSIS AND DESIGN
+                </li>
+                <li style="padding-top: 10px;">
+                    DATABASE SYSTEM CONCEPTS
+                </li>
+                <li style="padding-top: 10px;">
+                    ENGLISH FOR COMMUNICATION
+                </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li style="padding-top: 10px;">
+                    INFORMATION SYSTEM SECURITY AND IT LAWS
+                    </li>
+                    <li style="padding-top: 10px;">
+                    HUMAN INTERFACE DESIGN
+                    </li>
+                    <li style="padding-top: 10px;">
+                    REPORT WRITING
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li style="padding-top: 10px;">
+                    INFORMATION TECHNOLOGY PROJECT MANAGEMENT
+                    </li>
+                    <li style="padding-top: 10px;">
+                    SEMINAR ON PROFESSIONAL COMMUNICATION SKILLS
+                    </li>
+                    <li style="padding-top: 10px;">
+                    ELECTIVE COURSE IN INFORMATION TECHNOLOGY 1
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>If choosing to do a cooperative work, there are <b>no general classes.</b></p>
+                <p>If choosing to do a project</p>
+                <ul>
+                    <li style="padding-top: 10px;">
+                    ELECTIVE COURSE IN INFORMATION TECHNOLOGY 2
+                    </li>
+                    <li style="padding-top: 10px;">
+                    ELECTIVE COURSE IN HUMANITY 2
+                    </li>
+                    <li style="padding-top: 10px;">
+                    ELECTIVE COURSE IN SCIENTIFIC AND MATHEMATICS 2
+                    </li>
+                    <li style="padding-top: 10px;">
+                        FREE ELECTIVE COURSE 1
+                    </li>
+                    <li style="padding-top: 10px;">
+                        FREE ELECTIVE COURSE 2
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>If choosing to do a cooperative work</p>
+                <ul>
+                    <li style="padding-top: 10px;">
+                    ENTREPRENEURSHIP
+                    </li>
+                    <li style="padding-top: 10px;">
+                    ELECTIVE COURSE IN INFORMATION TECHNOLOGY 2
+                    </li>
+                    <li style="padding-top: 10px;">
+                   ELECTIVE COURSE IN HUMANITY 2
+                    </li>
+                    <li style="padding-top: 10px;">
+                    ELECTIVE COURSE IN SCIENTIFIC AND MATHEMATICS 2
+                    </li>
+                    <li style="padding-top: 10px;">
+                    FREE ELECTIVE COURSE 1
+                    </li>
+                    <li style="padding-top: 10px;">
+                    FREE ELECTIVE COURSE 2
+                    </li>
+                </ul>
+                <p>If choosing to do a project</p>
+                <ul>
+                    <li style="padding-top: 10px;">
+                    ENTREPRENEURSHIP
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4 style="font-family: 'Philosopher', sans-serif; color: #228B22;">Multimedia-specialised Class</h4>
+
+        <ul class="uk-switcher switcher-container uk-margin">
+            <li>
+                <ul uk-tab>
+                    <li><a href="#">MULTIMEDIA PROGRAMMING</a></li>
+                    <li><a href="#">COMPUTER GRAPHICS AND ANIMATION</a></li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>&emsp; Concepts in multimedia applications for web and mobile i.e. platforms, architectures, and development process; programming techniques for handling and manipulating digital multimedia; interactive animation programming; 2D animation; game and event driven programming; development of rich media user interface; technologies and standard for web 
+                    and mobile based applications development; multimedia software development tools; libraries and applications programming interfaces; hand-on development of skills for multimedia content and application development. <br/>
+
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#modal-group-a" uk-toggle>read review</a>
+                        </p>
+                            <div id="modal-group-a" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <div class="uk-modal-header">
+                                    <h2 class="uk-modal-title">MULTIMEDIA PROGRAMMING</h2>
+                                </div>
+                                <div class="uk-modal-body">
+                                    <p>&emsp; &emsp; Focusing on studying front-end or the front-web page and learning basic HTML + CSS. It also focuses on design and Javascript language which makes the web page look more interesting. I learnt about basic of responsive web design. In javascript, the class focuses on taking the element of the HTML to make it more interesting. Eventhough you have no knowledges about website, they can still have fun with it!</p>
+                                    <p style="text-align: center;">-Pattadon Baongern-</p>
+                                </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li>&emsp; Raster and vector graphics; 2D and 3D object representations; 3D rendering pipeline; 3D projection and transformation techniques; 3D lighting and shading techniques; 3D texture mapping techniques; 3D rendering techniques; basic 2D and 3D computer animation concepts; use of 3D computer graphics application software for basic 3D modeling and animation. <br/>
+
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#modal-group-b" uk-toggle>read review</a>
+                        </p>
+                            <div id="modal-group-b" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <div class="uk-modal-header">
+                                    <h2 class="uk-modal-title">COMPUTER GRAPHICS AND ANIMATION</h2>
+                                </div>
+                                <div class="uk-modal-body">
+                                    <p>&emsp; This course is about the process in making 3D image, the source of the algorithm for changing 2D images and 3D models e.g. preferment, rotating, resize the image etc. by using the matrix principle in mathematical and 3D design principle such as used of color and light, arrangement of the image element, animation which the lab of this course used the ‘Blender’ program in creating 3D modeling. Project of this course is to form 3D model to apply in games.</p>
+                                    <p style="text-align: center;">-Juthada Suwanthara-</p>
+                                </div>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+
+                <ul uk-tab>
+                    <li><a href="#">GAME DESIGN AND DEVELOPMENT</a></li>
+                    <li><a href="#">GRAPHICS DESIGN PRINCIPLES</a></li>
+                    <li><a href="#">3D COMPUTER ANIMATION</a></li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>&emsp; Game genres; game design concepts and guidelines; game development process; storytelling design; gameplay design; user interface design; core mechanic design; level design; important algorithms for game; computer game development.<br/>
+
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#modal-group-c" uk-toggle>read review</a>
+                        </p>
+                            <div id="modal-group-c" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <div class="uk-modal-header">
+                                    <h2 class="uk-modal-title">GAME DESIGN AND DEVELOPMENT</h2>
+                                </div>
+                                <div class="uk-modal-body">
+                                    <p>&emsp; This course is to learn about the basic communication in the form of games. The content is learning from designing games, and developing, focusing on the basic and elements of games. Every week, we used Unity engine to develop games. It was easier than JAVA. Basically, this course is for people who have no knowledges in design.</p>
+                                    <p style="text-align: center;">-Pattadon Baongern-</p>
+                                </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li>&emsp; Introduction to different art forms, basic principles and elements of design, color
+                    theories, composition principles, typography, sketching and drawing, types of graphics design
+                    software tools, learning practical skills in creating graphics for digital media. <br/>
+
+
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#modal-group-d" uk-toggle>read review</a>
+                        </p>
+                            <div id="modal-group-d" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <div class="uk-modal-header">
+                                    <h2 class="uk-modal-title">GRAPHICS DESIGN PRINCIPLES</h2>
+                                </div>
+                                <div class="uk-modal-body">
+                                    <p>&emsp; This course is like a dream for me because the exams are easy. The professor from the Faculty of Education taught how to design the product, teachings from the history of art each time, character source and the important peoples (It is theoretical lecture.) In the practical, the professor taught how to design, how to use 3D program, and the techniques because we had assignments to make a product video that we designed and had to submit the 2 pieces of work.</p>
+                                    <p style="text-align: center;">-Rujapa Chotisawatraksa-</p>
+                                </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li>&emsp; Fundamental principles of animation; 3D computer animation concepts; advanced lighting and shading echniques; concepts and techniques for character modeling and animation; 
+                    use of 3D computer animation software for advance character modeling and animation; post production techniques for 3D computer animation.</li>
+                </ul>
+            </li> 
+            <li>
+                <ul uk-tab>
+                    <li><a href="#">WEB DESIGN AND DEVELOPMENT</a></li>
+                    <li><a href="#">FUNDAMENTALS OF DIGITAL STORYTELLING AND CINEMATOGRAPHY</a></li>
+                    <li><a href="#">ADVANCED GAME DEVELOPMENT</a></li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>&emsp; Client-side web technologies; user-centered web design process; web design
+                    principles; responsive web design; web design for mobile devices; web design for a singlepage 
+                    application; interactive front-end web development; frameworks and tools for web design and development; information architecture; writing for web; web development using CMS technologies. <br/>
+
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#modal-group-e" uk-toggle>read review</a>
+                        </p>
+                            <div id="modal-group-e" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <div class="uk-modal-header">
+                                    <h2 class="uk-modal-title">WEB DESIGN AND DEVELOPMENT</h2>
+                                </div>
+                                <div class="uk-modal-body">
+                                    <p>&emsp; This course is about develop the website by using php, javascript and have to make responsive web. We have to do lab assignment every week and we have to submit the assignment thru Git desktop. This course has worked with the photo club from architecture faculty, they responsibility for design and take a photo and we are responsibility for creating the website which will take the information from architecture faculty. I have got a topic about foods and the architecture faculty choose BreadTalk(bakery shop) but my project have to be under the condition that the photo have to come from the architect only, not from the social media and every web page should response. I tell that working with other faculty it’s quite difficult in communication and they don’t know about the web and they also have different working system but the benefit is that we are working with many people and get to improve the communication skill.</p>
+                                    <p style="text-align: center;">-Supapitch Hongsawat-</p>
+                                </div>
+                                </div>
+                            </div>
+
+                    </li>
+                    <li>&emsp; Overview of visual storytelling; storytelling techniques; ideation techniques; basic concepts of digital photography; cinematography process; camera placement and
+                    movement; use of lens; lighting; video continuity and editing; basic knowledge of visual
+                    effects.</li>
+                    <li>&emsp; Essential mathematics and physics; artificial intelligence; tilemaps; advanced
+                    graphical and audio effects; novel interfaces for game; current game platform; network game
+                    development; augmented reality game development; 3D game development for mobile
+                    devices.</li>
+                </ul>
+            </li>
+            <li>
+                <p>If choosing to do a cooperative work</p>
+                <ul>
+                    <li>COOPERATIVE EDUCATION IN MULTIMEDIA AND GAME
+                    DEVELOPMENT or OVERSEA Cooperative Education in Multimedia and
+                    Game Development</li>
+                </ul>
+                <p>If choosing to do a project</p>
+                <ul>
+                    <li>PROJECT IN MULTIMEDIA AND GAME DEVELOPMENT 1</li>
+                </ul>
+            </li>
+            <li>
+                <div>
+                <p>If choosing to do a cooperative work, there are <b>no Multimedia-specialised Class.</b></p>
+                </div>
+                <div>
+                <p>If choosing to do a project</p>
+                    <ul>
+                    <li>PROJECT IN MULTIMEDIA AND GAME DEVELOPMENT 2</li>
+                    </ul>
+                </div>
+                
+            </li>
+        </ul>
+
+    </div>
+
+    </section>
+
+    
+
+    <section class="uk-background-fixed uk-background-center-center" style="background-image: url(faq1.jpg);" id="stuinter">
+        <!--student review-->
+
+        <h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px; font-family: 'Ubuntu', sans-serif; text-shadow: 1px 1px white;">Student interview</h1>
+    <div style="text-align: center;">
+        <div style="display: inline-block;" class="uk-card uk-card-default uk-width-1-2@m">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="Pmine.jpg">
+                    </div>
+                    <div style="text-align: left;" class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Mine</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">4th-year student </time></p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-body">
+                <p>I chose Multimedia because it is similar to arts which i like a lot. In my opinion, I did not care if it will be hard to find jobs in the market.</p>
+            </div>
+            <div style="padding: 0px 0px 40px 20px;">
+                    <p uk-margin>
+                        <a class="uk-button uk-button-default" href="#modal-group-1" uk-toggle>see more</a>
+                    </p>
+
+                    <div id="modal-group-1" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Mine, 4th-year student</h2>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>I chose Multimedia because it is similar to arts which i like a lot. In my opinion, I did not care if it will be hard to find jobs in the market. This is something that I will be with for the rest of my college life so it has to to be something I really enjoy. If you have strong intention, you will surely go far. I reccommend everyone to choose Multi. The Multi professors are so nice and devoted!</p>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <hr class="clear">
+        <div style="display: inline-block;" class="uk-card uk-card-default uk-width-1-2@m">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="Pboss.jpg">
+                    </div>
+                    <div style="text-align: left;" class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Boss</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">4th-year student</time></p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-body">
+                <p>I choose multimedia because I like and interested in making graphics games.</p>
+            </div>
+            <div style="padding: 0px 0px 40px 20px;">
+
+                    <p uk-margin>
+                        <a class="uk-button uk-button-default" href="#modal-group-2" uk-toggle>see more</a>
+                    </p>
+
+                    <div id="modal-group-2" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Boss, 4th-year student</h2>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>I choose multimedia because I like and interested in making graphics games. It very good as i choose what i like and i have passion in study. For the second year student that are choosing the field, i recommend choose what you like and then choose. All three branch have their own difficulties.</p>
+                        </div>
+                        </div>
+                    </div>                    
+            </div>
+        </div>
+        <hr class="clear">
+        <div style="display: inline-block;" class="uk-card uk-card-default uk-width-1-2@m">
+            <div class="uk-card-header">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="Pjenny.jpg">
+                    </div>
+                    <div style="text-align: left;" class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Jenny</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">4th-year student</time></p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-body">
+                <p>I choose multimedia because i like the new technology and the media such as websites, games and i wanted to make it by myself.</p>
+            </div>
+            <div style="padding: 0px 0px 40px 20px;">
+
+                    <p uk-margin>
+                        <a class="uk-button uk-button-default" href="#modal-group-3" uk-toggle>see more</a>
+                    </p>
+
+                    <div id="modal-group-3" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Jenny, 4th-year student</h2>
+                        </div>
+                        <div class="uk-modal-body">
+                            <p>I choose multimedia because i like the new technology and the media such as websites, games and i wanted to make it by myself. I want to recommend to the one who are choosing the field, i want you all to choose what you really like is the best because it will make you happy and fun learning about that and you can do it better.</p>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <hr class="clear">
+    </section>
+
+    <hr class="clear">
+
+    <section id="cooperaandproj">
+        <!--cooperative work vs. project-->
+        <h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px; font-family: 'Ubuntu', sans-serif;">Cooperative Work VS. Project</h1>
+        <div style="padding: 0px 40px 40px 40px;">
+        <table id="CoopPro" style="margin: 0 auto;">
+          <tr>
+            <th>Cooperative Works</th>
+            <th>Projects</th>
+          </tr>
+          <tr>
+            <td>1 semester period(only first semester)</td>
+            <td>2 semester period(whole school year)</td>
+          </tr>
+          <tr>
+            <td>work at a company as one of their employee</td>
+            <td>do a project with your project professor at the faculty of IT</td>
+          </tr>
+          <tr>
+            <td>have taken all required classses already before do the operative work in Semester one. have to come back and take the other elective classes (if have any)</td>
+            <td>can take any classes left while doing the project in both semester</td>
+          </tr>
+          <tr>
+            <td>graded by the cooperative professor at IT and the boss at the company</td>
+            <td>graded by your project proffesors and other committee professor</td>
+          </tr>
+          <tr>
+            <td>have no F in grades and no dropped-off classe</td>
+            <td>can have F and dropped-off classes to do a project</td>
+          </tr>
+          <tr>
+            <td>talk with the Student Service to find a company or you can find the company and the faculty will talk with the company</td>
+            <td>find your project professors at the first semester of 3rd-year of study</td>
+          </tr>
+        </table>
+        </div>
+    </section>
+
+    <section class="uk-background-fixed uk-background-center-center" style="background-image: url(faq3.jpg);">
+        <h2 style="text-align: center; font-family: 'Ubuntu', sans-serif; color: white; text-shadow: 1px 1px black;">Example of Cooperative work student</h2>
+    <div style="text-align: center;">
+    <div style="display: inline-block;" class="uk-card uk-card-default uk-width-1-2@m">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-border-circle" width="40" height="40" src="Pfang.jpg">
+                </div>
+                <div style="text-align: left;" class="uk-width-expand">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">Fang</h3>
+                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Chunyanuch Kimpiam <br/> 
+                    A newly-grad Multi student who is also the only Multimedia student in her class who did the <b>Cooperative work Programme</b></time></p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <p>she worked at Muffin Animation Co.,Ltd For 4 months as a 3D Generalist. This position covers all aspects of 3D production such as modeling , layout and animation.</p>
+        </div>
+        <div style="padding-bottom: 20px;" uk-lightbox>
+            <a class="uk-button uk-button-default" href="fang_poster.jpg" data-caption="Caption">See poster</a>
+            <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=oKVJNy9Tsd4" data-caption="YouTube">Click to watch</a>
+            <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">read more</button>
+                <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <h3>Work and experiences</h3>
+                        <p>Kemrex innovision foundation advertisement is the advertisement for creating description, details and benefits of Kemrex. Kemrex advertisement creation can be divided into main process according to period of submission. They have CG Pipeline or sub process in each main process. This advertisement operations are teamwork.
+                        <br/>Personal talk: I got more experience from instructions to improve my work and it can be used without causing any problem.
+                        </p>
+                    </div>
+                </div>
+        </div>       
+             
+    </div>
+    </div>
+    <hr class="clear">
+    </section>
+
+    <hr class="clear">
+    <section>
+        <!--project example-->
+        <h2 style="text-align: center; font-family: 'Ubuntu', sans-serif">Example of projects</h2>
+        <div style="padding: 0px 40px 40px 40px;" class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img style="height: 50vh;" src="audicise.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Audicise - The new generation of interactive music games</h3>
+                        <p>By Panuwat Huachai, Peeraphon Kunthamyothin</p>
+                        <p>Audicise is the new generation of interactive music games. Designed to play with Leap motion, a motion sensing controller. Players will interact and have fun with the game by waving their hands to the rhythm. The game also has many ways to choose songs from, including bundled songs or they can browse in their own music library.</p>
+                        <div uk-lightbox>
+                            <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=1KjmkfDH_TY&feature=youtu.be" data-caption="YouTube">Click to watch game example</a>
+                        </div>
+
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#modal-group-i" uk-toggle>read more</a>
+                        </p>
+                            <div id="modal-group-i" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <div class="uk-modal-header">
+                                    <h2 class="uk-modal-title">Audicise (more)</h2>
+                                </div>
+                                <div class="uk-modal-body">
+                                    <p>&emsp; &emsp; Personal talk from Panuwat: This project was like a dream for me, because I want to create my own game for graduation. When I was committed to do this project, I was even being uncertain that I will be able to do it. Even though I have some experiences with Unity but Leap Motion on the other hand, is a completely new thing to me. They were even a time when I spent days and nights achieve nothing, many days passed just to find a solution to some persistent problems. At a time when a game is starting to look completed in gameplay and graphics, I was hyped. To come from a simple flying boxes in the dark to a final product was really a satisfaction. It was endurance and dedication that can made me go this far, and also my good advices from my teacher as well. The final product is beyond even my own expectations, it is feature rich and so fun to play. At the project exhibition I was applauded by many friends, that alone can make me forgot all tiredness from all the work I've done. Also the experiences I got from this work is quite helpful. I have known how important it is to research for new knowledge and also how to plan to deal with workloads, because these are crucial parts of any works. Finally the technical knowledge I've earned from this project still serves me well this day in my daily works, it was a worthy experience.
+                                    </p>
+                                    <p style="text-align: center;">-Pattadon Baongern-</p>
+                                </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">CAMP AND EVENT MANAGEMENT SYSTEM</h3>
+                        <p>By Teerawat Teerathumrongrak Patchara Leelawongpanich</p>
+                        <p>it’s about It is for communication and information management for activities and camps. The communication model focuses on the use of Push to talk, similar to radio communications, and then manage.</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img style="height: 77vh; padding-left: 10%;" src="project3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 0px 40px 40px 40px;" class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Text & Objects detection on billboard</h3>
+                        <p>By Tripidok Intasuwan, Jakkrapat Keawthong</p>
+                        <p>It is a programme that detect the object on billboard. It can detect the message and collect the data to private algorithm. Then the result is used to search for the Ads on that billboard. </p>
+                        <p>
+                            Personal talk from Tripidok: For my project, i’ve make change both heading and name many time so it make the starting point distorted. The professor recommended on the project and bring me back. During the process is fun and the professor will give suggestion such as, what to use that it will result out for my project wants. However, I don’t know how to use i have to do research and try to use it. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Interactive wall games using kinect</h3>
+                        <p>By Atiwat Vorasaksirikul, Apicha Inprom</p>
+                        <p>Writing a game programming by unity3d and used the motion control Kinect device it's a game for elementary school kids aged 6-9.
+                        </p>
+                        <div uk-lightbox>
+                            <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=UHQa0bfEnf4&feature=youtu.be" data-caption="YouTube">Click to watch game example</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <hr class="clear">
+
+    <section style="background-color: #E0FFFF;" id="futurejobs">
+        <!--future job-->
+        <h1 style="text-align: center; padding-top: 10px; padding-bottom: 10px; font-family: 'Ubuntu', sans-serif; text-shadow: 1px 1px black;">Future Jobs</h1>
+        <div class="futurejob">
+            <ul class="ch-grid">
+                <li>
+                    <div class="ch-item ch-img-1">
+                        <div class="ch-info">
+                            <h4>Graphic Designer</h4>
+                            <p><b>Design Logo, Banner, Label</b</p>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="ch-item ch-img-2">
+                        <div class="ch-info">
+                            <h4>Unity Game Developer</h4>
+                            <p><b>Create versatile applications using Unity as primary IDE.</b></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-3">
+                        <div class="ch-info">
+                            <h4>Technical Artist </h4>
+                            <p><b>Game programmer focusing on Computer Graphics</b></p>
+                        </dv>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-4">
+                         <div class="ch-info">
+                            <h4>Full stack web developer</h4>
+                            <p><b>write and design websites, calculate back-end, design database</b></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                     <div class="ch-item ch-img-5">
+                         <div class="ch-info">
+                            <h4>IT support</h4>
+                            <p><b>computer operation, device maintenance, config Software</b></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p style="text-align: center; padding-bottom: 2%;">Some Multimedia students can do work unspecefied to their field as well.</p>
+            
+        </div>
+        <h2 id="alumni" style="text-align: center; margin-top: 10px; font-family: 'Ubuntu', sans-serif; text-shadow: 1px 1px black;">Multimedia Student Alumni</h1>
+        <div style="margin-bottom: 20px;" class="people">
+            <ul class="ch-grid">
+                <li>
+                    <div class="ch-item ch-img-1">
+                        <div class="ch-info">
+                            <h4 id="mathurin">Graphic Designer</h4>
+                        </div>
+                    </div>
+                    <p>Graphic Designer <br>
+                    Mathurin Sungkhawijit <br/>
+                    At Hub Creation Co., Ltd.<br/>
+                    </p>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-2">
+                        <div class="ch-info">
+                            <h4>Unity Game Developer</h4>
+                        </div>
+                    </div>
+                    <p>Unity Game Developer <br/>
+                    Panuwat Huachai <br/>
+                    At <a href="https://www.facebook.com/anyimedia">Any I</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-3">
+                        <div class="ch-info">
+                            <h4>Technical Artist </h4>
+                        </div>
+                    </div>
+                    <p>
+                        Technical Artist <br/>
+                        Rungsimun Saenprasert<br/>
+                        At Extreme Studio
+                    </p>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-4">
+                         <div class="ch-info">
+                            <h4>Full stack web developer</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Full stack web developer <br/>
+                        Nattawut Kornwisitwaitn <br/>
+                        At keepcoding
+                    </p>
+                </li>
+                <li>
+                     <div class="ch-item ch-img-5">
+                         <div class="ch-info">
+                            <h4>IT support</h4>
+                        </div>
+                    </div>
+                    <p>
+                        IT support <br/>
+                        Teerawat Teerathumrongrak<br/>
+                        At Phungnoi Bakery
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <hr class="clear">
+    </section>
+
+    
+
+
+    <section id="faques">
+        <!--faq-->
+    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+     data-src="faq0.jpg"
+     data-srcset="faq0.jpg 650w,
+                  faq0.jpg 1300w"
+     data-sizes="(min-width: 650px) 650px, 100vw" uk-img>
+</div>
+
+    
+
+    <div style="padding: 20px 40px 20px 40px;" class="uk-column-1-2 uk-column-divider">
+
+        <blockquote cite="#" class="uk-column-span">
+            <p>Why do many students think that Multimedia is about creating games? </p>
+            <footer>"November, 2018 by" <cite><a href="http://www.it.kmitl.ac.th/about/personnel/1604">Samart Mudleah</a></cite></footer>
+        </blockquote>
+
+        <p>
+        &emsp; Multimedia refers to the use of various forms of media, such as graphic, sound, animation and text, to transmit information to users. Many people think multimedia is about creating games because it is something visible. <br/>
+        &emsp; It is common that people will confused that multimedia is creating a game as most of the people will use multimedia to make something creative and attractive to people. Game development is only one of the classes multimedia students will study in this fields. <br/>
+        &emsp; More than creating games, Multimedia students also learn about Computer Graphics, techniques for the design and interactive simulations, supported by general ideas coverage of key computing concepts include programming, database and networking which is base on the graphic.  <br/>
+        &emsp; This field helps students to develop both computer science and creative skills in up-to-date multimedia technologies, 3D modelling and animation tools and technologies for game development. It can be state that this field is 90% of mathematic but people would not notice because their will focus on the coding or design which is used similar language such as, English to make something. Some of the course in this field is still overlaps to each other for example to design a website it may use some technique from SE or Network field to create it.
+        </p>
+    </div> 
+    
+    </section>
+
+    
+
+    <section id="abtus">
+        <!--about us-->
+
+        <div class="aboutus" style="background-color: black;">
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">About Us
+                </text>
+            </symbol>
+
+            <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+    </div>
+
+    <div class="webmaker" style="text-align: center; font-size: 1.1em;">
+        <div class="row" style="display: inline-block;">
+            <div class="column" style="padding-right: 5px;">
+                <img style="border-radius: 50%; width: 200px;" src="meen.jpg" alt="60070175" style="width:70%">
+                <p style="padding-top: 10px;">Ms.Pidchayanin Chutipattana<br/>
+                Student ID: 60070175 <br/>
+                Faculty of Information Technology, KMITL<br/>
+                Major: Business IT(International Programme)<br/>
+                E-mail: 60070175@it.kmitl.ac.th
+                </p>
+            </div>
+            <div class="column">
+                <img style="border-radius: 50%; width: 200px;" src="bam.jpg" alt="60070177" style="width:70%">
+                <p style="padding-top: 10px;">Ms. 
+                Supawadee Waewklaihong<br/>
+                Student ID: 60070177 <br/>
+                Faculty of Information Technology, KMITL<br/>
+                Major: Business IT(International Programme)<br/>
+                E-mail: 60070177@it.kmitl.ac.th</p>
+            </div>
+        </div>
+    </div>
+
+
+<div style="margin-left: 40px; margin-bottom: 20px;">
+    <h3>Reference;</h3>
+
+        <li>
+            <a href="IT_Curriculum.pdf">
+            IT curriculum book
+            </a> (Full version)
+        </li>
+        <li>
+            <a href="http://www.it.kmitl.ac.th/">Faculty of IT, KMITL website
+            </a>
+        </li>
+
+    <div>
+        <h3>Special Thank;
+        </h3>
+        <li>Prof. Sirion Vittayakorn
+        </li>
+        <li>All Staffs from the Student Service room at Faculty of IT
+        </li>
+    </div>
+
+</div>
+
+    </section>
+
+    
+
+
+
+        <!--slideshow-->
+        <!-- <section class="container">
+        <div style="background-color: black;" class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: push; min-height: 300; max-height: 600">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h2 class="uk-margin-remove">Center</h2>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+            <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                <h3 class="uk-margin-remove">Overlay Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
+                <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+    </ul>
+
+    <div class="uk-light">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+
+</div>
+
+</section> -->
+
+
+
+<a href="#" uk-totop uk-scroll></a>
+
+
+    </body>
+</html>
